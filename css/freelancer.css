@@ -95,6 +95,10 @@ section h2 {
   font-size: 30px;
 }
 
+.font-12 {
+  font-size: 12px;
+}
+
 .scroll-to-top {
   z-index: 1042;
   right: 1rem;
@@ -350,6 +354,7 @@ header.masthead h2 {
 
 .copyright {
   background-color: #426515;
+  margin-bottom: 55px;
 }
 
 .menu .meals__header {
