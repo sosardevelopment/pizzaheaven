@@ -117,6 +117,10 @@ section h2 {
   max-width: 100%;
 }
 
+.perma-link:active {
+  color: #8bb631 !important;
+}
+
 /*@font-face {
   font-family: 'TizaFont';
   url('./tiza/tiza-webfont.woff') format('woff'),
