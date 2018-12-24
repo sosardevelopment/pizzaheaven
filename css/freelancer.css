@@ -109,6 +109,10 @@ section h2 {
   line-height: 3.1rem;
 }
 
+.max-width {
+  max-width: 100%;
+}
+
 /*@font-face {
   font-family: 'TizaFont';
   url('./tiza/tiza-webfont.woff') format('woff'),
