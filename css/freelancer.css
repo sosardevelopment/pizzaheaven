@@ -400,6 +400,10 @@ header.masthead h2 {
   text-transform: uppercase;
 }
 
+.menu table tbody tr .description {
+  font-size: 16px;
+}
+
 .menu table tbody tr .price {
   text-align: right;
   white-space: nowrap;
