@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Freelancer v5.0.0 (https://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2018 Start Bootstrap
+ * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
 
@@ -95,6 +95,10 @@ section h2 {
   font-size: 30px;
 }
 
+.font-10 {
+  font-size: 10px;
+}
+
 .font-12 {
   font-size: 12px;
 }
@@ -119,6 +123,11 @@ section h2 {
 
 .perma-link:active {
   color: #8bb631 !important;
+}
+
+.menu-table {
+  max-width: 700px;
+  margin: auto;
 }
 
 /*@font-face {
