@@ -45,7 +45,7 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top text-uppercase" id="mainNav">
       <div class="container">
         <img class="logo mr-3" src="./img/logo.png">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Pizza  Heaven</a>
@@ -83,9 +83,9 @@
 
     <section class="our-story" id="our-story">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-3">Die Pizzaheaven Story</h2>
+        <div class="custom-headline text-center text-uppercase text-white">Die Pizzaheaven Story</div>
 
-        <div class="text-center text-secondary">
+        <div class="text-center text-white py-2">
           <h4>...oder wie der Himmel auf die Erde kam.</h4>
         </div>
 
@@ -193,21 +193,18 @@
     <!-- location  -->
     <section class="location mb-0" id="location">
       <div class="container">
-        <h2 class="text-center text-secondary text-uppercase">Hier entsteht deine Pizza</h2>
+        <div class="custom-headline text-center text-white text-uppercase">Hier entsteht deine Pizza</div>
         <hr class="star-dark mb-5">
         <p class="lead mb-0 mt-2 text-center">
           Landwiedstraße 31, 4020 Linz<br/>
           +43 664 885 75 750
         </p>
-        <div class="map-container">
-            <div id="map"></div>
-          </div>
         <!--<div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2655.453774638576!2d14.277905515354586!3d48.27488534956707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477397b23f7ac46d%3A0x996b672dece9c76d!2sLandwiedstra%C3%9Fe+31%2C+4020+Linz!5e0!3m2!1sen!2sat!4v1537633500325" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>-->
+            <div id="map"></div>
+          </div>-->
         <div class="text-center">
           <p class="lead mb-0 mt-4">
-            <span class="text-uppercase text-primary">Unsere Öffnungszeiten</span><br/>
+            <span class="text-uppercase text-white">Unsere Öffnungszeiten</span><br/>
             Mo - Do: 11-14 & 17-22 Uhr<br/>
             Fr - So & Feiertage: 11-22 Uhr
           </p>
@@ -218,18 +215,18 @@
     <!-- meals -->
     <section class="menu mb-0" id="meals">
       <div class="container">
-        <h2 class="text-center text-secondary text-uppercase">Unsere Speisen</h2>
+        <div class="custom-headline text-center text-white text-uppercase">Unsere Speisen</div>
         <hr class="star-dark mb-5">
 
 
         <div class="text-center">
-          <!--<a href="https://delivery-app-gp-staging.azurewebsites.net/restaurants/pizza-heaven-landwiedstrasse" class="btn btn-secondary text-uppercase"> Zur Bestellung online </a>-->
-          <a href="" class="w-100 btn btn-secondary text-uppercase"> Zur Bestellung online </a>
+          <!--<a href="https://delivery-app-gp-staging.azurewebsites.net/restaurants/pizza-heaven-landwiedstrasse" class="btn btn-primary text-uppercase"> Zur Bestellung online </a>-->
+          <a href="" class="btn bg-white text-primary text-uppercase"> Zur Bestellung online </a>
         </div>
 
 
         <div class="text-center my-3">
-          <a target="_blank" href="files/menu.pdf">Speisekarte als PDF herunterladen</a>
+          <a target="_blank" class="text-white" href="files/menu.pdf">Speisekarte als PDF herunterladen</a>
         </div>
 
         <!--<div>
@@ -915,8 +912,12 @@
     </section>
 
     <!-- Contact Section -->
-    <h2 class="text-center text-uppercase text-secondary mb-0" id="imprint">Impressum</h2>
-    <hr class="star-dark mb-5">
+    <section>
+        <div class="container">
+            <div class="custom-headline text-center text-uppercase text-white mb-0" id="imprint">Impressum</div>
+            <hr class="star-dark mb-5">
+        </div>
+
 
     <details>
     <summary class="text-center mb-3">Zur Anzeige des Impressums hier klicken</summary>
@@ -996,9 +997,13 @@
         </div>
       </section>
     </details>
+    </section>
 
 
-    <h2 class="text-center text-uppercase text-secondary mb-0" id="privacy">Datenschutz</h2>
+    <section>
+        <div class="container">
+
+    <div class="custom-headline text-center text-uppercase text-white mb-0" id="privacy">Datenschutz</div>
     <hr class="star-dark mb-5">
     <details>
       <summary class="text-center mb-3">Zur Anzeige der Datenschutzerklärung hier klicken</summary>
@@ -1065,9 +1070,11 @@
       </section>
     </details>
 
+        </div>
+    </section>
 
-    <div class="fixed-bottom bg-secondary text-white text-center p-1">
-      <div><span class="text-primary perma-link">+43 664 885 75 750</span> oder <span> <a class="text-primary perma-link" href="">online bestellen</a></span></div>
+    <div class="fixed-bottom bg-primary text-white text-center p-1">
+      <div><span class="text-secondary perma-link">+43 664 885 75 750</span> oder <span> <a class="text-secondary perma-link" href="">online bestellen</a></span></div>
       <div>
         <span class="font-12">Mo - Do: 11-14 & 17-22 Uhr | Fr - So & Feiertage: 11-22 Uhr</span>
       </div>
@@ -1146,9 +1153,9 @@
     <script src="js/customCode.min.js"></script>
 
 
-    <script async defer
+    <!--<script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVOCu8CSBbeYAZwmx921nCswS1lodytiE&callback=initMap"></script>
-
+-->
 
     <script type="text/javascript" id="cookieinfo"
             src="//cookieinfoscript.com/js/cookieinfo.min.js"
