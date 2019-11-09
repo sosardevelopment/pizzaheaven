@@ -101,7 +101,8 @@
       <br/>
       </p>-->
 
-      <a href="https://food.pizzaheaven.at" class=" btn bg-white text-primary text-uppercase"><span class="">Direkt zur Online-Bestellung </span></a>
+      <a  class="popup-modal btn bg-white text-primary text-uppercase" href="#purchase-online-modal">Direkt zur Online-Bestellung</a>
+      <!--<a href="https://food.pizzaheaven.at" class=" "><span class="">Direkt zur Online-Bestellung </span></a>-->
 
     </div>
 
@@ -222,10 +223,19 @@
         <p class="lead text-center">
           Delivery & Take Away (kein Restaurantbetrieb)
         </p>
-        <p class="lead mb-0 mt-2 text-center">
-          Landwiedstraße 31, 4020 Linz<br/>
-          +43 664 885 75 750
-        </p>
+          <div class="text-center">
+              <p class="lead mb-0 mt-4">
+                  <span class="text-uppercase text-white">Unsere Standorte</span><br/>
+                  Standort Linz<br/>
+                  Landwiedstraße 31, 4020 Linz<br/>
+                  +43 664 885 75 <span class="text-danger">750</span><br/><br/>
+                  Standort Urfahr<br/>
+                  Rudolfstraße 39, 4040 Urfahr<br/>
+                  +43 664 885 75 <span class="text-danger">757</span>
+              </p>
+          </div>
+
+
         <!--<div class="map-container">
             <div id="map"></div>
           </div>-->
@@ -251,12 +261,14 @@
             Delivery & Take Away (kein Restaurantbetrieb)<br/>
           Mindestbestellwert in unserem Liefergebiet: 15 Euro, Lieferkosten: 3,5 Euro<br/>
           Gerne liefern wir auch außerhalb unseres Liefergebiets (bis zu 5 km), allerdings erst ab einem Mindestbestellwert von 35 Euro.<br/>
-          Ob wir zu dir liefern findest du auf unserer Bestellseite rechts oben unter Information (<a href="https://food.pizzaheaven.at/restaurants/pizza-heaven-landwiedstrasse">Zur Bestellseite</a>)
+          Ob wir zu dir liefern findest du auf unserer Bestellseite je nach Standort rechts oben unter Information (<a  class="popup-modal" href="#purchase-online-modal">Zur Bestellseite</a>)
         </div>
 
         <div class="text-center mt-2">
           <!--<a href="https://delivery-app-gp-staging.azurewebsites.net/restaurants/pizza-heaven-landwiedstrasse" class="btn btn-primary text-uppercase"> Zur Bestellung online </a>-->
-          <a href="https://food.pizzaheaven.at" class="btn bg-white text-primary text-uppercase"> Zur Bestellung online </a>
+          <!--<a href="https://food.pizzaheaven.at" class="btn bg-white text-primary text-uppercase"> Zur Bestellung online </a>-->
+
+          <a  class="popup-modal btn bg-white text-primary text-uppercase" href="#purchase-online-modal">Zur Bestellung online</a>
         </div>
 
 
@@ -1177,7 +1189,21 @@
     </section>
 
     <div class="fixed-bottom bg-primary text-white text-center p-1">
-      <div><span class="text-black perma-link">+43 664 885 75 750</span> oder <span> <a class="text-black perma-link" href="https://food.pizzaheaven.at">online bestellen</a></span></div>
+        <div class="d-flex flex-row align-items-center justify-content-center">
+            <div class="p-2 font-12 text-right">
+                <span class="text-black perma-link">Linz: 0664 885 75 <span class="text-danger">750</span></span><br/>
+                <span class="text-black perma-link">Urfahr: 0664 885 75 <span class="text-danger">757</span></span>
+            </div>
+            <div>oder</div>
+            <div class="p-2">
+                <span> <a  class="popup-modal text-black perma-link" href="#purchase-online-modal">online bestellen</a></span>
+            </div>
+        </div>
+
+        <!--
+      <div>
+          <span class="text-black perma-link">+43 664 885 75 750</span> oder <span> <a class="text-black perma-link" href="https://food.pizzaheaven.at">online bestellen</a></span></div>
+-->
       <div>
         <span class="font-12">Di-Fr: 11-14 & 17-21:30 Uhr | Sa 11-22 Uhr | So, FT 16:30-21 Uhr</span>
       </div>
@@ -1188,16 +1214,15 @@
     <footer class="footer text-center">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 mb-5 mb-lg-0">
+          <div class="col-md-5 mb-5 mb-lg-0">
             <!--<h4 class="text-uppercase mb-4">Hier findest uns du</h4>-->
-            <p class="lead mb-0">
-              Landwiedstraße 31<br/>
-              4020 Linz<br/>
-              +43 664 885 75 750<br/>
-              office@pizzaheaven.at
-            </p>
+            <span class="lead mb-0">
+                Standort Linz:<br/>Landwiedstraße 31, 4020 Linz<br/>+43 664 885 75 <span class="text-danger">750</span><br/><hr>
+                Standort Urfahr:<br/>Rudolfstraße 39, 4040 Urfahr<br/>+43 664 885 75 <span class="text-danger">757</span><br/>
+            </span>
+
           </div>
-          <div class="col-md-4 mb-5 mb-lg-0">
+          <div class="col-md-2 mb-5 mb-lg-0">
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/pizzaheavenlinz">
@@ -1212,7 +1237,7 @@
               </li>-->
             </ul>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-5">
             <p class="lead mb-0">
               <span class="text-uppercase text-white">Unsere Öffnungszeiten</span><br/>
               Mo: Ruhetag<br/>
@@ -1231,7 +1256,7 @@
         <a class="js-scroll-trigger ml-2" href="#privacy">Datenschutz</a>
         <br/>
 
-        <small>Copyright since 2018 &copy; Pizzaheaven GmbH</small>
+        <small>Copyright since 2019 &copy; Pizzaheaven GmbH</small>
       </div>
     </div>
 
@@ -1244,6 +1269,27 @@
       </a>
     </div>
 
+
+    <!-- purchase online dialog -->
+    <div id="purchase-online-modal" class="mfp-hide white-popup-block bg-white mx-2 px-2 py-3">
+        <h3>Wo willst du bestellen?</h3>
+
+        <div class="d-flex flex-row my-3">
+            <a class="w-50 mr-1  btn btn-primary text-uppercase" href="https://food.pizzaheaven.at/restaurants/pizza-heaven-landwiedstrasse">
+            <div class="text-center">
+              Linz<br/><span class="wrap-text">(4020*,4030*, 4050*,4060*)</span>
+            </div>
+            </a>
+            <a class="w-50 ml-1  btn btn-primary text-uppercase" href="https://food.pizzaheaven.at/restaurants/pizza-heaven-rudolfstrasse">
+            <div class="text-center">
+                Urfahr<br/>(4040*, 4048*)
+            </div>
+            </a>
+        </div>
+      <div class="font-italic font-12 py-2">
+        *) Teile dieses PLZ-Abschnittes werden beliefert. Nähere Details siehe Bestellseite.
+      </div>
+    </div>
 
 
     <!-- Bootstrap core JavaScript -->
